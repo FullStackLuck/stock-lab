@@ -10,16 +10,15 @@ const OneStock = (props) => {
 
   const [stock, setStock] = useState(null)
 
-
   const getStock = async () => {
     const response = await fetch(url)
     const data = await response.json()
     setStock(data[0])
+    console.log(data)
   }
 
   useEffect(() => {getStock()}, [])
 
-console.log("name is: ",stock.name)
   const loaded = () => {
     return (
       <div>

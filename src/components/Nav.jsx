@@ -7,7 +7,6 @@ const Nav = (props)=>{
         <div className="nav">
         <Link to="/">Home Page</Link>
         <Link to="/About">About</Link>
-        <Link to="/Stocks/:symbol">Stocks</Link>
         <Link to="/Stock">Dashboard</Link>
         </div>
     )
